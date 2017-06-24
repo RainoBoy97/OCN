@@ -2,24 +2,24 @@ module BUNNY
     CONFIG = {
         production: -> {
             {
-                hosts: (1..3).map{|n| "mq#{n}" },
-                user: "overcast",
-                password: "overcast"
+                hosts: "rabbit",
+                user: "guest",
+                password: "guest"
             }
         },
         development: -> {
             {
-                host: "localhost",
-                user: "admin",
-                password: "admin"
+                hosts: "rabbit",
+                user: "guest",
+                password: "guest"
             }
         },
         test: -> {
             {
-                host: "localhost",
                 port: 6783,
-                user: "admin",
-                password: "admin"
+                hosts: "rabbit",
+                user: "guest",
+                password: "guest"
             }
         }
     }
