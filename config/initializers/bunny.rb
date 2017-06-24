@@ -10,16 +10,16 @@ module BUNNY
         development: -> {
             {
                 host: "localhost",
-                user: "guest",
-                password: "guest"
+                user: "admin",
+                password: "admin"
             }
         },
         test: -> {
             {
                 host: "localhost",
                 port: 6783,
-                user: "guest",
-                password: "guest"
+                user: "admin",
+                password: "admin"
             }
         }
     }
